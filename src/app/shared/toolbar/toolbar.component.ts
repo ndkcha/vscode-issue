@@ -43,6 +43,8 @@ export class ToolbarComponent {
 
     /** Clear the localStorage and route to login page */
     logout(): void {
+        // error says, cannot find name 'localStorage'
+        // it works will in apps generated from pervious version of angular.cli
         localStorage.clear();
         this.router.navigate(['/login']);
     }
