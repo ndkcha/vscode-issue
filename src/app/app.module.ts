@@ -1,20 +1,32 @@
+/**
+ * @author ndkcha
+ * @since 0.1.0
+ * @version 0.1.0
+ */
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { MaterialModule } from '@angular/material';
+import "hammerjs";
 
 import { AppComponent } from './app.component';
 
+import { AppRoutes } from './app.routes';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+	declarations: [
+		AppComponent
+	],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		HttpModule,
+		MaterialModule.forRoot(),
+		AppRoutes
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }

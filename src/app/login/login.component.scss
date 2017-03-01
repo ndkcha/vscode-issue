@@ -1,0 +1,63 @@
+/* custom sassy style sheet for map view */
+@import './../shared/theme.class';
+
+.sm-login {
+    height: 100%;
+
+    .sm-login-logo {
+        width: 16rem;
+        margin-bottom: 16px;
+    }
+
+    md-card {
+        background: #FAFAFA;
+        transition: all 100ms ease;
+
+        &.loading {
+            min-width: 20em;
+            padding: 24px 0 0 0;
+
+            .text {
+                letter-spacing: 0.06625em;
+            }
+        }
+
+        .smi-box {
+            margin: 6px 0;
+            letter-spacing: 0.0625em;
+
+            label {
+                text-align: right;
+                margin-right: 4px;
+                min-width: 64px;
+                font-size: 9pt;
+                color: #616161;
+            }
+
+            input {
+                outline: none;
+                border: 0;
+                color: #616161;
+                font-size: 11pt;
+                padding: 8px 14px;
+                border-radius: 2px;
+                box-shadow: 0 0 1px #9E9E9E inset;
+                transition: border-bottom 300ms ease;
+
+                &:hover {
+                    box-shadow: 0 0 1px #BDBDBD inset;
+                }
+                &:focus {
+                    box-shadow: 0 0 1px #BDBDBD inset;
+                }
+            }
+        }
+
+        button {
+            letter-spacing: 0.0925em;
+            margin: 20px 24px 0;
+            font-size: 8pt;
+            text-transform: uppercase;
+        }
+    }
+}

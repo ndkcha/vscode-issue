@@ -1,0 +1,29 @@
+.flex-fill {
+  // This fills the remaining space, by using flexbox. 
+  // Every toolbar row uses a flexbox row layout.
+  flex: 1 1 auto;
+}
+
+.sm-toolbar {
+    box-shadow: 1px 1px 3px 1px rgba(200, 200, 200, 0.5);
+    background: white;
+
+    .title {
+        font-size: 14pt;
+        text-transform: uppercase;
+    }
+
+    .subtitle {
+        font-size: 9pt;
+        color: #9E9E9E;
+        margin: 0 2px -3px 8px;
+        letter-spacing: 0.02625em;
+    }
+
+    .logout {
+        font-size: 8pt;
+        letter-spacing: 0.02625em;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+}

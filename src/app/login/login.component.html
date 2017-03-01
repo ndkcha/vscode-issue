@@ -1,0 +1,18 @@
+<div class="flex column center middle sm-login">
+    <img src="assets/logo.png" class="sm-login-logo">
+    <md-card [ngClass]="{'loading': isLoading}">
+        <md-card-content class="flex column">
+            <div class="flex row middle smi-box" *ngIf="!isLoading">
+                <label>email: </label>
+                <input type="email" [(ngModel)]="userDetails.email">
+            </div>
+            <div class="flex row middle smi-box" *ngIf="!isLoading">
+                <label>password: </label>
+                <input type="password" (keydown.enter)="doLogin()" [(ngModel)]="userDetails.password">
+            </div>
+            <button *ngIf="!isLoading" md-raised-button color="primary" (click)="doLogin()">Sign In</button>
+            <div class="flex center text sm-style c3" *ngIf="isLoading">Loading</div>
+        </md-card-content>
+        <md-progress-bar *ngIf="isLoading" mode="indeterminate" color="primary"></md-progress-bar>
+    </md-card>
+</div>
